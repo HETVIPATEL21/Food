@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>foody page</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <div class="top">
+      <div class="nav-bar">
+          <div class="nav-logo">
+              <img src="logo.png" width="80" height="80">
+          </div>
+          <div class="nav-link" id="nav-link">
+             <i class="fa fa-close" onclick="closeMenu()"></i>
+              <ul>
+                 <a href="#"> <li>Home</li></a>
+                  <a href="#"> <li>About us</li></a>
+                   <a href="#"> <li>Recipe</li></a>
+                    <a href="#"> <li>Contact us</li></a>
+              </ul>
+              <button type="button" class="btn"> SIGN UP</button>
+          </div>
+                      <i class="fa fa-bars" onclick="showMenu()"></i>
+
+      </div>
+      <div class="banner-title">
+          <h1> <span>You don’t need a </span><br>silver fork to eat good food.</h1>
+          <button type="button" class="btn"> EXPLORE</button>
+      </div>
+      <div class="menubar">
+          <div class="search-icon">
+              <i class="fa fa-th-list"></i>
+              <i class="fa fa-search"></i>
+          </div>
+          
+          <div class="social-icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i> 
+            </div>
+      </div>
+      <div class="notification">
+          <div class="content">
+              <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dolore magna aliqua.</small>
+              <p><a href="">THANK</a> <a href=""> YOU</a></p>
+          </div>
+          <div class="notification-img">
+              <img src="small%20img.jpeg"> 
+          </div>
+      </div>
+    </div>
+    <script>
+        var show = document.getElementById("nav-link");
+    function showMenu()
+        {
+            show.style.right="0";
+        }
+        function closeMenu()
+        {
+            show.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
